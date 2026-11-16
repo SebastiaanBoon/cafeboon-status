@@ -1,31 +1,50 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: SebastiaanBoon
+repo: cafeboon-status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Company Brain, website
+    slug: company-brain-website
+    url: https://companybrain.cafeboon.com/
+  - name: Company Brain, health check
+    slug: company-brain-health
+    url: https://companybrain.cafeboon.com/healthz
+  - name: Company Brain, MCP endpoint
+    slug: company-brain-mcp
+    url: https://companybrain.cafeboon.com/mcp
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    body: "{}"
+    expectedStatusCodes:
+      - 401
+  - name: Alter Ego, website
+    slug: alter-ego-website
+    url: https://cloudalterego.cafeboon.com/
+  - name: Alter Ego, health check
+    slug: alter-ego-health
+    url: https://cloudalterego.cafeboon.com/healthz
+  - name: Alter Ego, MCP endpoint
+    slug: alter-ego-mcp
+    url: https://cloudalterego.cafeboon.com/mcp
+    method: POST
+    headers:
+      - "Content-Type: application/json"
+    body: "{}"
+    expectedStatusCodes:
+      - 401
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /cafeboon-status
+  logoUrl: https://cloudalterego.cafeboon.com/assets/logo-192.png
+  name: Cafe Boon status
+  introTitle: "**Status of Company Brain and Alter Ego**"
+  introMessage: "These checks run every five minutes from GitHub. An incident is opened here when a product does not answer. The MCP endpoint check expects a 401 answer, because the endpoint answers unauthenticated calls with 401 when it is up. How incidents are handled is described in the incident policy of each product."
   navbar:
     - title: Status
       href: /
+    - title: Company Brain
+      href: https://companybrain.cafeboon.com
+    - title: Alter Ego
+      href: https://cloudalterego.cafeboon.com
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
