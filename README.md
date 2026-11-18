@@ -1,6 +1,6 @@
 # [📈 Live Status](https://SebastiaanBoon.github.io/cafeboon-status): <!--live status--> **🟩 All systems operational**
 
-This repository contains the open-source uptime monitor and status page for [Sebastiaan Boon](cafeboon.com), powered by [Upptime](https://github.com/upptime/upptime).
+This repository contains the open-source uptime monitor and status page for [Cafe Boon](https://cafeboon.com), powered by [Upptime](https://github.com/upptime/upptime).
 
 [![Uptime CI](https://github.com/SebastiaanBoon/cafeboon-status/workflows/Uptime%20CI/badge.svg)](https://github.com/SebastiaanBoon/cafeboon-status/actions/workflows/uptime.yml)
 [![Response Time CI](https://github.com/SebastiaanBoon/cafeboon-status/workflows/Response%20Time%20CI/badge.svg)](https://github.com/SebastiaanBoon/cafeboon-status/actions/workflows/response-time.yml)
