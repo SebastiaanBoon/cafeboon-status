@@ -2,15 +2,15 @@ owner: SebastiaanBoon
 repo: cafeboon-status
 
 sites:
-  - name: Company Brain, website
+  - name: Enterprise Ego, website
     slug: company-brain-website
-    url: https://companybrain.cafeboon.com/
-  - name: Company Brain, health check
+    url: https://enterpriseego.cafeboon.com/
+  - name: Enterprise Ego, health check
     slug: company-brain-health
-    url: https://companybrain.cafeboon.com/healthz
-  - name: Company Brain, MCP endpoint
+    url: https://enterpriseego.cafeboon.com/healthz
+  - name: Enterprise Ego, MCP endpoint
     slug: company-brain-mcp
-    url: https://companybrain.cafeboon.com/mcp
+    url: https://enterpriseego.cafeboon.com/mcp
     method: POST
     headers:
       - "Content-Type: application/json"
@@ -37,13 +37,13 @@ status-website:
   baseUrl: /cafeboon-status
   logoUrl: https://cloudalterego.cafeboon.com/assets/logo-192.png
   name: Cafe Boon status
-  introTitle: "**Status of Company Brain and Alter Ego**"
+  introTitle: "**Status of Enterprise Ego and Alter Ego**"
   introMessage: "These checks run every five minutes from GitHub. An incident is opened here when a product does not answer. The MCP endpoint check expects a 401 answer, because the endpoint answers unauthenticated calls with 401 when it is up. How incidents are handled is described in the incident policy of each product."
   navbar:
     - title: Status
       href: /
-    - title: Company Brain
-      href: https://companybrain.cafeboon.com
+    - title: Enterprise Ego
+      href: https://enterpriseego.cafeboon.com
     - title: Alter Ego
       href: https://cloudalterego.cafeboon.com
     - title: GitHub
